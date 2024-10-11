@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  background-image: url(smile-project/background3.jpg);
+  background-size: 100%;
+}
+.quote-block {
+  background-color: rgb(211, 56, 206);
+}
+header {
+  display: relative;
+}
+header div {
+  top: -10px;
+}
