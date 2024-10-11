@@ -1,18 +1,409 @@
+/* fonts */
+@font-face {
+  font-family: 'SansPro-Black';
+  src: url(fonts/source-sans-pro/SourceSansPro-Black.otf);
+}
+@font-face {
+  font-family: 'SansPro-regular';
+  src: url(fonts/source-sans-pro/SourceSansPro-Regular.otf);
+}
+@font-face {
+  font-family: 'SansPro-light';
+  src: url(fonts/source-sans-pro/SourceSansPro-Light.otf);
+}
+@font-face {
+  font-family: 'SansPro-semibold';
+  src: url(fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url(fonts/poppins/Poppins-Light.otf);
+}
+
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url(fonts/poppins/Poppins-Black.otf);
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url(fonts/poppins/Poppins-Regular.otf);
+}
+@font-face {
+  font-family: 'Poppins-semibold';
+  src: url(fonts/poppins/Poppins-Medium.otf);
+}
+/* fonts -end */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Sans;
 }
-.banner {
-  background-image: url(smile-project/background3.jpg);
-  background-size: 100%;
-}
-.quote-block {
-  background-color: rgb(211, 56, 206);
-}
+/* logo header section */
 header {
-  display: relative;
+  position: absolute;
+  min-width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
 }
-header div {
-  top: -10px;
+header .navs{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-buttons{
+  margin-top: 7px;
+}
+.nav-buttons a {
+  font-family: 'Poppins-Light';
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+/* logo header section */
+
+/* main page */
+.banner {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(128, 128, 128, 0.5), rgba(255, 255, 255, 0)), /* Black to gray to transparent */
+  url('img/background-og.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1440px;
+  height: 1293px;
+}
+.big-content {
+  position: absolute;
+  top: 350px;
+  left: 25%;
+}
+.big-content h1 {
+  font-size: 120px;
+  text-align: center;
+  color: white;
+  font-family: 'SansPro-Black';
+}
+.moto {
+  display: flex;
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: space-between;
+}
+.moto p {
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Poppins-regular';
+} 
+button.one {
+  color: white;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: rgb(56, 55, 55);
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 50px;
+  margin-left: 265px;
+  margin-top: 70px;
+  font-family: 'Poppins-regular';
+}
+.tutors {
+  position: absolute;
+  color: white;
+  width: 80%;
+  top: 750px;
+  left: 10%;
+}
+.tutors h2 {
+  text-align: center;
+  font-size: 35px;;
+  font-family: 'SansPro-regular';
+  padding: 80px 0;
+}
+.tutors h2 span {
+  color: bisque;
+  font-size: 38px;;
+  font-family: 'SansPro-regular';
+  padding: 80px 0;
+}
+.tutors h4 {
+  /* font-family: 'Poppins-semibold'; */
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'SansPro-semibold';
+  text-align: center;
+}
+span {
+  color: rgb(150, 97, 32)
+}
+.pros p {
+  font-weight: 5;
+  font-style: italic;
+  text-align: center;
+  line-height: 25px;
+}
+
+.pros{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+.pros img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  margin: 0px 10px 0px 14px;
+
+}
+/* main page */
+
+/* TESTIMONIAL/quote */
+.quote-block {
+  /* background-color: rgb(169, 149, 125); */
+  background-color: rgba(93, 92, 91, 0.77);
+  padding: 4%;
+  color: white;
+}
+
+.testimonial {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  height: 110px;
+  justify-content: space-between;
+}
+.quote-block img {
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;  
+}
+.quote p {
+  margin-top: 10px;
+  font-family: 'SansPro-light';
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+quote-block {
+  font-family: 'SansPro-regular';
+  font-size: 18px;
+  line-height: 25px;
+}
+.quote h4 {
+  font-family: 'SansPro-black';
+  font-size: 20px;
+  padding-top: 35px;
+}
+/* TESTIMONIAL */
+
+/* VIDEOS */
+.videos {
+  padding: 2%;
+}
+.videos h3{
+  font-size: 35px;
+  text-align: center;
+  padding: 40px 40px 0 40px;
+  font-family: 'SansPro-semibold';
+}
+.tutorials {
+  display: flex;
+  padding: 80px;
+}
+.tut h4 {
+  font-family: 'SansPro-semibold';
+  margin:20px 0;
+  font-size: 18px;
+  padding-left: 15px;
+}
+.tutorials h5 {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-family: 'SansPro-black';
+}
+.tut .lorem {
+  color: rgb(108, 105, 105);
+  line-height: 25px;
+  margin-top: 10px;
+  font-family: 'SansPro-regular';
+  padding-left: 15px;
+  padding-right: 45px;
+}
+
+.author {
+  display: flex;
+  margin: 15px 0;
+  padding-left: 15px;
+}
+
+.rate-block {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 65px;
+  padding-left: 15px;
+}
+.rate-block p {
+  font-family: 'SansPro-regular';
+}
+
+.play1 {
+  position: absolute;
+  top: 1800px;
+  left: 14%;
+  opacity: 1;
+}
+.play2 {
+  position: absolute;
+  top: 1800px;
+  left: 35%;
+  opacity: 0.9;
+}
+.play3 {
+  position: absolute;
+  top: 1800px;
+  left: 57%;
+  opacity: 0.9;
+}
+.play4 {
+  position: absolute;
+  top: 1800px;
+  left: 78%;
+  opacity: 0.9;
+}
+/* VIDEOS */
+
+/* MEMBERSHIP */
+.membership-section {
+  background-color: rgba(152, 148, 144, 0.308);
+  margin: 0 50px;
+  border: 2px ;
+}
+.membership-section h3.special {
+  text-align: center;
+  padding: 4%;
+  font-family: 'SansPro-semibold';
+  font-size: 27.5px;
+}
+.membership-section h3 span{
+  font-family: 'SansPro-black';
+  font-size: 30px;
+}
+.memberships h3 {
+  font-family: 'sansPro-semibold';
+}
+.memberships {
+  display: flex;
+  margin: 3% 10%;
+}
+.one img {
+  padding-bottom: 30px;
+  margin-left: 105px;
+} 
+
+.one h3 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.one p {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Sanspro-regular';
+  line-height: 25px;
+}
+body > main > section.membership-section > button{
+  font-size: 16px;
+  color: white;
+  background-color: rgb(56, 55, 55);
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 50px;
+  margin-left: 580px;
+  margin-bottom: 70px;
+  font-family: 'Poppins-regular';
+}
+/* MEMBERSHIP */
+
+/* FAQ */
+.faq {
+  background-color: white;
+  
+}
+.faq h2{
+  text-align: center;
+  font-size: 50px;
+  margin: 6%;
+  font-weight: lighter;
+
+}
+.row-block1{
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+}
+.row-block1 p {
+  width: 75%;
+  padding: 50px;
+}
+.row-block2 p {
+  width: 75%;
+  padding: 50px;
+}
+.row-block2{
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+  margin-bottom: 100px;
+}
+.faq h4 {
+  font-weight: bolder;
+  font-family: 'SansPro-black';
+  padding-left: 150px;
+}
+.faq p {
+  font-family: 'SansPro-regular';
+  line-height: 30px;
+}
+
+/* FAQ */
+
+/* footer */
+footer {
+  background-color: rgb(94, 91, 91);
+  padding: 5px;
+}
+.logo-social {
+  display: flex;
+  padding: 70px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+.social-icons{
+  display: flex;
+  width: 75px;
+  justify-content: space-between;
+}
+footer p {
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+  color: rgb(192, 186, 178);
+  margin: 20px;
+  font-family: 'SansPro-regular';
+}
+
+/* editing a span */
+.popular {
+  font-family: 'SansPro-black';
 }
